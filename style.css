@@ -1,41 +1,237 @@
 /* CSS files add styling rules to your content */
-
-body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+/*Home banner*/
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fchihiro049.jpg?v=1605361013294");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-table {
-  width:100%;
-}
-table, th, td {
-  border: 5px dotted magenta;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 15px;
+.hero-text {
   text-align: center;
-}
-#color tr:nth-child(even) {
-  background-color: #eee;
-}
-#color tr:nth-child(odd) {
- background-color: #fff;
-}
-#color th {
-  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
 }
 
-td {
-  font-family: courier, serif;
+.hero-text button {
+  border: none;
+  border-radius: 10px;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
 }
 
-th {
-  font-family: courier, serif;
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
 }
+
+a {
+  font-family: "Questrial", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: center;
+  padding: 50px;
+  height: 300px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Home page layout*/
+.home h1 {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+.home p {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-style: italic;
+}
+.home button {
+  background-color: black;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px 8px;
+  cursor: pointer;
+  border-radius: 100%;
+  float: right;
+}
+.greenbox {
+  background-color: #9BE6A2;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+}
+.yellowbox {
+  background-color: #E6D372;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bluebox {
+  background-color: #6BB7FA;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+.twocol {
+  width: 50%;
+}
+
+/*navigation bar*/
+a {
+  color: black;
+}
+a {
+  border: 1px solid black;
+  padding: 10px 50px;
+  text-decoration: none;
+  background-color: none;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  font-style: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  color: black;
+}
+
+/*Biography page layout*/
+.middlebox {
+  background-color: #9BE6A2;
+  margin-bottom: 40px;
+  height: 50%;
+}
+.quote h3 {
+  text-align: center;
+  font-family: "Questrial", sans-serif;
+}
+
+/*Hayao circular profile*/
+img {
+  border-radius: 50%;
+  width: 360px;
+  height: 380px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/*Artworks page layout*/
+.art h1 {
+  font-family: "Questrial", sans-serif;
+  color: black;
+  font-size: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.greenbox {
+  background-color: #9BE6A2;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  margin-top: 50px;
+}
+.yellowbox {
+  background-color: #E6D372;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bluebox {
+  background-color: #6BB7FA;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.redbox {
+  background-color: #FF9C75;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pinkbox {
+  background-color: #DAB0FA;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fourcol {
+  width: 100%;
+}
+
+/*Awards page layout*/
+.awards h1 {
+  font-family: "Questrial", sans-serif;
+  color: black;
+  font-size: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*Films page layout*/
+.films h1 {
+  font-family: "Questrial", sans-serif;
+  color: black;
+  font-size: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
