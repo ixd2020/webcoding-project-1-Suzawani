@@ -132,11 +132,16 @@ a:active {
 
 .container {
   margin-top: 20px;
+  float: center;
 }
 
 .navbarlink a {
   border: 1px solid black;
   padding: 10px;
+}
+
+.homebutton {
+  float: left;
 }
 
 /*Biography page layout*/
@@ -162,11 +167,11 @@ a:active {
 }
 .bio1 img {
   max-width: 100%;
-    max-height: 100%;
+  max-height: 100%;
 }
 .bio2 img {
   max-width: 100%;
-    max-height: 100%;
+  max-height: 100%;
 }
 .indexcontainer {
   margin-right: 20px;
@@ -208,7 +213,6 @@ a:active {
   width: 200px;
 }
 .redbox {
-  background-color: #920CF2;
   color: white;
 }
 .two img {
@@ -217,30 +221,93 @@ a:active {
 
   width: 290px;
   height: 400px;
+  margin-left: 45px;
+}
+.four img {
+  object-fit: cover;
+  object-position: 50% 0;
+
+  width: 290px;
+  height: 400px;
+  margin-left: 45px;
+}
+.five img {
+  object-fit: cover;
+  object-position: 43% 0;
+
+  width: 290px;
+  height: 400px;
+  margin-left: 45px;
+}
+.six img {
+  object-fit: cover;
+  object-position: 0 90%;
+
+  width: 290px;
+  height: 400px;
+  margin-left: 45px;
+}
+.three img {
+  object-fit: cover;
+  object-position: 60% 0;
+
+  width: 290px;
+  height: 400px;
+  margin-left: 45px;
 }
 .yellowbox {
-  background-color: #4300DB;
   color: white;
 }
 .bluebox {
-  background-color: #CA00EB;
   color: white;
 }
 .one img {
-   max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 .greenbox {
-  background-color: #110CF2;
   color: white;
 }
 .magentabox {
-  background-color: #4670EB;
   color: white;
 }
 .fourcol {
   width: 25%;
 }
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.myDIV:hover + .hide2 {
+  display: block;
+  color: black;
+  text-align: center;
+  margin-top: 2px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.hide {
+  display: none;
+}
+.hide2 {
+  display: none;
+}
+
 /*Awards page layout*/
 .awards h1 {
   font-family: "Questrial", sans-serif;
@@ -252,9 +319,32 @@ a:active {
   margin-top: 100px;
 }
 
+.ponyo img {
+  max-width: 200;
+  max-height: 200%;
+  border-radius: 10px;
+  border: solid black;
+  border-width: 1px;
+}
 
-.ponyo img 
+.awdbox {
+  float: left;
+  margin-left: 125px;
+  height: 300px;
+}
 
+.qwertbox {
+  color: blue;
+  margin-right: 30px;
+}
+.asdfbox {
+  color: blue;
+  margin-left: 30px;
+}
+
+.twocolawd {
+  width: 40%;
+}
 
 /*Films page layout*/
 .films h1 {
