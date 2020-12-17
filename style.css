@@ -7,43 +7,92 @@ html {
   scroll-behavior: smooth;
 }
 
-/*Home banner*/
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fchihiro049.jpg?v=1605361013294");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.hero {
   position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  max-width: 100%;
+  margin: 0 auto;
 }
-.hero-text {
-  text-align: center;
+
+.hero img {
+ -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
+  margin-top: 30px;
+}
+.hero h1 {
+  
+  font-size: 100px;
+}
+
+.hero .content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  
+   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
 }
 
-.hero-text button {
-  border: none;
+.home a {
+  background-color: #d9d9d9;
+  text-decoration: none;
   border-radius: 10px;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
+  padding: 0 8px;
+  font-size: 17px;
+  
+   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
 }
 
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
+.home a:hover {
+  background-color: #ffffff;
+  text-decoration: none;
 }
+
+.home hr {
+  margin: 1.5em auto;
+  width: 1000px;
+}
+
+table.home {
+  display: block;
+  margin-right: auto;
+  margin-left: 100px;
+}
+.home img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.home td {
+  padding: 50px;
+  
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
+}
+.home h3 {
+  float: center;
+  background-color: #E1E1E9;
+  
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
+}
+.home p {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 500;
+ 
+  
+  
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
+}
+/*Home banner*/
 
 a {
   font-family: "Questrial", sans-serif;
@@ -68,45 +117,22 @@ a {
 .home p {
   font-family: "Raleway", sans-serif;
   font-size: 25px;
-  font-style: italic;
 }
-.home button {
-  background-color: black;
-  color: white;
-  font-family: "Raleway", sans-serif;
-  padding: 25px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
+
+button {
   margin: 10px 8px;
   cursor: pointer;
-  border-radius: 100%;
   float: right;
 }
-.indexbox {
-  float: center;
-  padding: 50px;
-  height: 300px;
-}
-.blackbox {
-  background-color: #000000;
-  color: white;
-}
-.greybox {
-  background-color: #D3D3D3;
-  color: white;
-}
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
+
+footer {
   text-align: center;
-  font-family: "Raleway", sans-serif;
-}
-.twocol {
-  width: 50%;
+  padding: 3px;
+  color: black;
+    font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /*navigation bar*/
@@ -133,15 +159,14 @@ a:active {
 .container {
   margin-top: 20px;
   float: center;
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
 }
 
 .navbarlink a {
   border: 1px solid black;
   padding: 10px;
-}
-
-.homebutton {
-  float: left;
 }
 
 /*Biography page layout*/
@@ -152,32 +177,104 @@ a:active {
   margin-right: 400px;
   margin-left: 400px;
 }
-.biobox {
+
+.header {
+  position: relative;
+  font-weight: 900;
+  font-size: 20px;
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
+}
+.header .text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.header .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+}
+
+.biography {
+  column-count: 2;
+  column-gap: 40px;
+  margin-right: 300px;
+  margin-left: 300px;
+  line-height: 25px;
+}
+
+.line hr {
+  margin: 1.5em auto;
+  width: 900px;
+}
+.biography span {
   float: left;
-  padding: 50px;
-  height: 300px;
+  width: 0.8em;
+  font-size: 400%;
+  font-family: "Raleway", sans-serif;
+  line-height: 75%;
 }
-.blackbox {
-  background-color: #000000;
-  color: white;
+.biography p {
+  text-indent: 2em;
 }
-.greybox {
-  background-color: #D3D3D3;
-  color: white;
+
+h3 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
 }
-.bio1 img {
-  max-width: 100%;
-  max-height: 100%;
+li {
+  list-style: none;
+  text-align: center;
+  line-height: 1.5em;
 }
-.bio2 img {
-  max-width: 100%;
-  max-height: 100%;
+ul {
+  margin-right: 2.5em;
 }
-.indexcontainer {
-  margin-right: 20px;
-  margin-left: 20px;
+
+.contents {
+  margin-top: 50px;
   margin-bottom: 50px;
-  margin-top: 30px;
+}
+.contents a {
+  background-color: #d9d9d9;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 0 8px;
+  font-size: 17px;
+}
+
+.contents a:hover {
+  background-color: #ffffff;
+}
+iframe {
+  display: block;
+  margin: auto;
+}
+
+.gallery td,
+tr {
+  padding: 30px;
+  /*
+  border: 2px solid black;
+  */
+}
+
+.gallery img {
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.gallery {
+  margin-left: auto;
+  margin-right: auto;
 }
 /*Hayao circular profile*/
 .profile img {
@@ -189,90 +286,94 @@ a:active {
   margin-right: auto;
   margin-top: 50px;
   margin-bottom: 40px;
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
 }
+
 /*Artworks page layout*/
-.art h1 {
-  font-family: "Questrial", sans-serif;
-  color: black;
-  font-size: 70px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 100px;
-  margin-top: 100px;
+.art {
+  position: relative;
+  font-weight: 900;
+  font-size: 20px;
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
 }
+.art .text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.art .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+}
+
+tr {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container.c {
+  margin-right: auto;
+   margin-left: auto;
+  display: block;
+}
+
+/*.c td,
+tr {
+  padding: 20px;
+  
+  border: 2px solid black;
+  
+}
+*/
+.c td img {
+  /*
+  border: 2px solid black;
+  */
+  border-radius: 4px;
+  padding: 30px;
+  align: center;
+}
+
+table.c {
+  table-layout: fixed;
+  align: center;
+}
+
 .landscape {
-  float: left;
-  padding: 50px;
-  height: 300px;
-  width: 200px;
+  width: 100%;
+  text-align: center;
 }
+
 .portrait {
-  float: left;
-  padding: 50px;
-  height: 500px;
-  width: 200px;
-}
-.redbox {
-  color: white;
-}
-.two img {
+  width: 350px;
+  height: 480px;
   object-fit: cover;
-  object-position: 37% 0;
-
-  width: 290px;
-  height: 400px;
-  margin-left: 45px;
-}
-.four img {
-  object-fit: cover;
-  object-position: 50% 0;
-
-  width: 290px;
-  height: 400px;
-  margin-left: 45px;
-}
-.five img {
-  object-fit: cover;
-  object-position: 43% 0;
-
-  width: 290px;
-  height: 400px;
-  margin-left: 45px;
-}
-.six img {
-  object-fit: cover;
-  object-position: 0 90%;
-
-  width: 290px;
-  height: 400px;
-  margin-left: 45px;
-}
-.three img {
-  object-fit: cover;
-  object-position: 60% 0;
-
-  width: 290px;
-  height: 400px;
-  margin-left: 45px;
-}
-.yellowbox {
-  color: white;
-}
-.bluebox {
-  color: white;
-}
-.one img {
-  max-width: 100%;
-  max-height: 100%;
-}
-.greenbox {
-  color: white;
-}
-.magentabox {
-  color: white;
-}
-.fourcol {
-  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .zoom {
@@ -280,9 +381,15 @@ a:active {
 }
 
 .zoom:hover {
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2);
+  -ms-transform: scale(1.3); /* IE 9 */
+  -webkit-transform: scale(1.3); /* Safari 3-8 */
+  transform: scale(1.3);
+}
+
+.portrait.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
 }
 
 .myDIV:hover + .hide {
@@ -309,50 +416,120 @@ a:active {
 }
 
 /*Awards page layout*/
-.awards h1 {
-  font-family: "Questrial", sans-serif;
-  color: black;
-  font-size: 70px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 100px;
-  margin-top: 100px;
+.awards {
+  position: relative;
+  font-weight: 900;
+  font-size: 20px;
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
+}
+.awards .text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.awards .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
 }
 
-.ponyo img {
-  max-width: 200;
-  max-height: 200%;
-  border-radius: 10px;
-  border: solid black;
-  border-width: 1px;
+#panel1, #oscar, #panel2, #japan{
+  padding: 10px;
+  text-align: center;
+  background-color: #E1E1E9;
+  border: solid 1px black;
+  
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
 }
 
-.awdbox {
-  float: left;
-  margin-left: 125px;
-  height: 300px;
+#oscar, #japan {
+  font-size: 40px;
+   font-family: "Questrial", sans-serif;
+  font-weight: bold;
+  
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
 }
 
-.qwertbox {
-  color: blue;
-  margin-right: 30px;
-}
-.asdfbox {
-  color: blue;
-  margin-left: 30px;
+.soft-link {
+    -webkit-transition: color .1s linear;
+    -moz-transition: color .1s linear;
+    -ms-transition: color .1s linear;
+    -o-transition: color .1s linear;
+    transition: color .1s linear;
 }
 
-.twocolawd {
-  width: 40%;
+
+#oscar a:hover {
+  color: #D99E30;
+  text-decoration: none;
+}
+
+#japan a:hover {
+  color: #D99E30;
+  text-decoration: none;
+}
+#panel1, #panel2 {
+  padding: 50px;
+  display: none;
+  font-size: 30px;
+  font-weight: 400;
+  
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
 }
 
 /*Films page layout*/
-.films h1 {
-  font-family: "Questrial", sans-serif;
-  color: black;
-  font-size: 70px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 100px;
-  margin-top: 100px;
+.films {
+  position: relative;
+  font-weight: 900;
+  font-size: 20px;
+
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
+}
+.films .text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.films .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+}
+
+.reel1, .reel2, .reel3, .reel4, .reel5, .reel6, .reel7{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+table.film {
+  display: block;
+  margin-right: 70px;
+}
+
+.film td {
+  padding: 50px;
+  
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
+}
+.film h3 {
+  float: center;
+  background-color: #E1E1E9;
+  
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
+}
+.film p {
+  font-family: "Raleway", sans-serif;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
 }

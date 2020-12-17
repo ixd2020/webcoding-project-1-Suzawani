@@ -22,65 +22,123 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-    <style></style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    
     <div class="container">
       <div style="text-align:center" class="navbarlink">
-      <a href="index.html" class="homebutton">Legacy of Hayao Miyazaki</a>
-      <a href="biography.html">BIOGRAPHY</a>
-      <a href="artworks.html">ARTWORKS</a>
-      <a href="awards.html">AWARDS</a>
-      <a href="films.html">FILMS</a>
+        <a href="index.html">Legacy of Hayao Miyazaki</a>
+        <a href="biography.html">BIOGRAPHY</a>
+        <a href="artworks.html">ARTWORKS</a>
+        <a href="awards.html">AWARDS</a>
+        <a href="films.html">FILMS</a>
+      </div>
     </div>
 
+    <div class="hero">
+      <img
+        src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2F96186b308addc3c4700a26adb3aac278.gif?v=1608176267399"
+        alt="gif"
+           style="width:100%;"
+      />
+      <div class="content">
+        <h1>Hayao Miyazaki</h1>
+        <h3>
+          A curation of his brilliant mind.
+        </h3>
+        
+      </div>
     </div>
     
-    <div class="hero-image">
-      <div class="hero-text">
-        <div class="home">
-          <h1>
-            The Legacy of Hayao Miyazaki
-          </h1>
-        </div>
-        <div class="home">
-          <p>Hayao Miyazaki, the genius of Studio Ghibli</p>
-        </div>
-        <button onclick="document.location='biography.html'">See more</button>
-      </div>
-    </div>
+    
+    
 
-  <div class="clearfix">
-      <div class="biobox blackbox twocol">
-        <p>Some text inside the box.</p>
-      </div>
-      <div class="biobox greybox twocol">
-        <p>Some text inside the box.</p>
-      </div>
-      <div class="biobox greybox twocol">
-        <p>Some text inside the box.</p>
-      </div>
-      <div class="biobox blackbox twocol">
-        <p>Some text inside the box.</p>
-      </div>
-      <div class="biobox blackbox twocol">
-        <p>Some text inside the box.</p>
-      </div>
-      <div class="biobox greybox twocol">
-        <p>Some text inside the box.</p>
-      </div>
-    </div>
-      
-      <div class="home">
-        <button onclick="topFunction()" title="Go to top">
-          TOP
-        </button>
-      </div>
-      
-      <div class="footer">
-        <p>FOOTER</p>
-      </div>
-    </div>
+    
+    <table class="home">
+      <tr>
+        <td>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Nibariki_%28Hayao_Miyazaki%27s_personal_studio%2C_Butaya%29.jpg" />
+        </td>
+        <td>
+          <h3>BIOGRAPHY</h3>
+          <br />
+          <p>
+            Walk through the mind of a genius.
+          </p>
+         <a href="biography.html">See more</a>
+        </td>
+      </tr>
+    </table>
+    
+    <hr>
+    
+    <table class="home">
+      <tr>
+        <td>
+          <h3>ARTWORKS</h3>
+          <br />
+          <p>
+            A gallery of stills shot from his masterpieces.
+          </p>
+         <a href="artworks.html">See more</a>
+        </td>
+         <td>
+        
+          <img src="https://live.staticflickr.com/654/31484829804_c4bb22c5c6_b.jpg" />
+        </td>
+      </tr>
+    </table>
+    
+    <hr>
+    
+     <table class="home">
+      <tr>
+        <td>
+          <img src="https://live.staticflickr.com/2437/3759138759_099a471a53_b.jpg" />
+        </td>
+        <td>
+          <h3>AWARDS</h3>
+          <br />
+          <p>
+            Notable titles recognized by the Oscars and aspiring children.
+          </p>
+         <a href="awards.html">See more</a>
+        </td>
+      </tr>
+    </table>
+    
+    <hr>
+    
+    <table class="home">
+      <tr>
+        <td>
+          <h3>FILMS</h3>
+          <br />
+          <p>
+            Watch how Hayao's eyes work in his mind.
+          </p>
+         <a href="films.html">See more</a>
+        </td>
+         <td>
+        
+          <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fhowl049.jpg?v=1605726471766" />
+        </td>
+      </tr>
+    </table>
+    
+    <hr>
+
+    <button onclick="topFunction()" title="Go to top">
+      <img
+        src="https://img.icons8.com/material-sharp/50/000000/circled-chevron-up.png"
+      />
+    </button>
+
+    <footer>
+      <p>Site by Suzawani</p>
+      <script>
+        document.write(Date());
+      </script>
+    </footer>
   </body>
 </html>

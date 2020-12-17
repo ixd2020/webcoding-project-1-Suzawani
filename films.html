@@ -1,45 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Animated Films Lead by Hayao Miyazaki</title>
-    
+
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
-     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
       rel="stylesheet"
     />
 
-    
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script>
+      initComparisons();
+    </script>
+  </head>
   <body>
-   <div class="container">
+    <div class="container">
       <div style="text-align:center" class="navbarlink">
-      <a href="index.html" class="home">Legacy of Hayao Miyazaki</a>
-      <a href="biography.html">BIOGRAPHY</a>
-      <a href="artworks.html">ARTWORKS</a>
-      <a href="awards.html">AWARDS</a>
-      <a href="films.html"><b>FILMS</b></a>
+        <a href="index.html" class="home">Legacy of Hayao Miyazaki</a>
+        <a href="biography.html">BIOGRAPHY</a>
+        <a href="artworks.html">ARTWORKS</a>
+        <a href="awards.html">AWARDS</a>
+        <a href="films.html"><b>FILMS</b></a>
+      </div>
     </div>
-    </div>
-    
+
     <div style="text-align:center">
       <div class="films">
         <h1>
-         “All my films are all my children.”
+          <span class="text-wrapper">
+            <span class="letters">
+              “All my films are all my children.”
+            </span>
+          </span>
         </h1>
       </div>
     </div>
+
+    <table class="film">
+      <tr>
+        <td>
+          <img
+            class="reel2"
+            src="https://www.ghibli.jp/gallery/kazetachinu024.jpg"
+          />
+          <img
+            class="reel2"
+            src="https://www.ghibli.jp/gallery/kazetachinu019.jpg"
+          />
+          <img
+            class="reel2"
+            src="https://www.ghibli.jp/gallery/kazetachinu021.jpg"
+          />
+          <img
+            class="reel2"
+            src="https://www.ghibli.jp/gallery/kazetachinu026.jpg"
+          />
+          <img
+            class="reel2"
+            src="https://www.ghibli.jp/gallery/kazetachinu035.jpg"
+          />
+        </td>
+        <td>
+          <h3>The Wind Rises (2013)</h3>
+          <br />
+          <p>
+            The Japanese title is Kaze Tachinu.
+          </p>
+          <p>
+            Intended to be Miyazaki’s swan song, The Wind Rises is a historical
+            drama that just so happens to be animated. This one aims for a more
+            adult audience. Call it “Jiro Dreams of Flying.” It’s about Jiro
+            Horikoshi, the nearsighted Japanese engineer whose knack for the
+            beauty of building inadvertently led him to invent the World War II
+            “Zero” fighter plane.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+     <hr>
     
-   <div class="footer">
-        <p>FOOTER</p>
-      </div>
+    <table class="film">
+      <tr>
+        <td>
+          <img class="reel7" src="https://www.ghibli.jp/gallery/ponyo024.jpg" />
+          <img class="reel7" src="https://www.ghibli.jp/gallery/ponyo028.jpg" />
+          <img class="reel7" src="https://www.ghibli.jp/gallery/ponyo040.jpg" />
+          <img class="reel7" src="https://www.ghibli.jp/gallery/ponyo039.jpg" />
+          <img class="reel7" src="https://www.ghibli.jp/gallery/ponyo041.jpg" />
+        </td>
+        <td>
+          <h3>Ponyo (2008)</h3>
+          <br />
+          <p>
+            The Japanese title is Gake no Ue no Ponyo or “Ponyo on the Cliff.”
+          </p>
+          <p>
+            In this movie, Miyazaki remixed The Little Mermaid into a Japanese
+            fairy tale. Traditional hand-drawn animation had long since been
+            overtaken by computer animation in the industry at large. Even
+            Ghibli had employed CGI touches in its films, but for Ponyo, the
+            studio went back to basics.
+          </p>
+          <p>
+            Everything in this film was hand drawn. The result is a whimsical,
+            kid-friendly entry into the Miyazaki canon.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+     <hr>
+    
+    <table class="film">
+      <tr>
+        <td>
+          <img class="reel6" src="https://www.ghibli.jp/gallery/howl004.jpg" />
+          <img class="reel6" src="https://www.ghibli.jp/gallery/howl010.jpg" />
+          <img class="reel6" src="https://www.ghibli.jp/gallery/howl011.jpg" />
+          <img class="reel6" src="https://www.ghibli.jp/gallery/howl014.jpg" />
+          <img class="reel6" src="https://www.ghibli.jp/gallery/howl044.jpg" />
+        </td>
+        <td>
+          <h3>Howl’s Moving Castle (2004)</h3>
+          <br />
+          <p>
+            The Japanese title is Hauru no Ugoku Shiro.
+          </p>
+          <p>
+            Howl’s Moving Castle bears all the hallmarks of a Miyazaki film:
+            castles, a love of aviation, strong heroines, witches and
+            restlessness with the overbearing technology and disconnection from
+            nature that is bred by contemporary life.
+          </p>
+          <p>
+            This time, Miyazaki lit his thematic cocktail with an anti-war
+            flame. The film came out during the Iraq War and Miyazaki
+            incorporated his pacifism and preoccupation with aging into the
+            movie’s colorful imagery. In this one, war machines peacock and pipe
+            smoke over green hills, forming a cartoonish contrast with otherwise
+            idyllic scenes of cottages and sheep herders.
+          </p>
+        </td>
+      </tr>
+    </table>
+    
+     <hr>
+
+    <table class="film">
+      <tr>
+        <td>
+          <img
+            class="reel5"
+            src="https://www.ghibli.jp/gallery/chihiro005.jpg"
+          />
+          <img
+            class="reel5"
+            src="https://www.ghibli.jp/gallery/chihiro021.jpg"
+          />
+          <img
+            class="reel5"
+            src="https://www.ghibli.jp/gallery/chihiro025.jpg"
+          />
+          <img
+            class="reel5"
+            src="https://www.ghibli.jp/gallery/chihiro031.jpg"
+          />
+          <img
+            class="reel5"
+            src="https://www.ghibli.jp/gallery/chihiro032.jpg"
+          />
+        </td>
+        <td>
+          <h3>Spirited Away (2001)</h3>
+          <br />
+          <p>
+            The Japanese title is Sen to Chihiro no Kamikakushi, or “Sen and
+            Chihiro’s Spiriting Away.”
+          </p>
+          <p>
+            Spirited Away continued Miyazaki’s winning streak in terms of
+            overseas exposure. This is the film that is generally regarded as
+            his masterpiece.
+          </p>
+          <p>
+            Recent rankings in The New York Times and on BBC Culture have
+            declared it the second and fourth best film of the 21st century,
+            respectively. After becoming the biggest worldwide box office hit in
+            Japanese history, the film won Best Animated Feature at the 75th
+            Academy Awards.
+          </p>
+          <p>
+            This is Miyazaki’s Alice in Wonderland or Wizard of Oz. The titular
+            Sen (meaning “1,000”) and Chihiro (“1,000 fathoms”) are two
+            different names for the same girl. Chihiro is her name before she
+            enters the spirit world and Sen is her named after she starts
+            slaving away at the bathhouse of the witch Yubaba — which is based
+            on Dogo Onsen, Japan’s oldest onsen (hot spring spa), located in
+            Matsuyama, Ehime Prefecture.
+          </p>
+          <p>
+            A strange fantasy where parents turn to pigs, Spirited Away also
+            furnished another popular Halloween costume: namely, that of the
+            masked No-Face.
+          </p>
+        </td>
+      </tr>
+    </table>
+    
+     <hr>
+
+    <table class="film">
+      <tr>
+        <td>
+          <img
+            class="reel4"
+            src="https://www.ghibli.jp/gallery/mononoke013.jpg"
+          />
+          <img
+            class="reel4"
+            src="https://www.ghibli.jp/gallery/mononoke018.jpg"
+          />
+          <img
+            class="reel4"
+            src="https://www.ghibli.jp/gallery/mononoke027.jpg"
+          />
+          <img
+            class="reel4"
+            src="https://www.ghibli.jp/gallery/mononoke041.jpg"
+          />
+          <img
+            class="reel4"
+            src="https://www.ghibli.jp/gallery/mononoke047.jpg"
+          />
+        </td>
+        <td>
+          <h3>Princess Mononoke (1997)</h3>
+          <br />
+          <p>
+            The Japanese title is Mononoke-hime.
+          </p>
+          <p>
+            This is my personal favorite Miyazaki film. In the West, it’s the
+            one that served as his first big crossover success on home media.
+            Miramax Films acted as the North American distributor for Princess
+            Mononoke. However, its studio chairman was notorious for wanting
+            foreign films chopped up into marketable stateside edits.
+          </p>
+          <p>
+            That chairman was Harvey Weinstein, the disgraced mogul whose
+            downfall precipitated the #MeToo movement around this time in 2017.
+            As the story goes, Miyazaki sent a katana sword to Weinstein with
+            the message: “No cuts.”
+          </p>
+          <p>
+            One can well imagine him wanting to send the same message to
+            deforesters. Princess Mononoke embodies the spirit of many Ghibli
+            films in that it shows the clash between human civilization and
+            nature. Spirits of the forest — including wolf, deer and boar gods —
+            find their realm threatened by the residents of Irontown. A cursed
+            prince, Ashitaka, attempts to mediate the growing conflict.
+          </p>
+        </td>
+      </tr>
+    </table>
+    
+     <hr>
+
+    <table class="film">
+      <tr>
+        <td>
+          <img class="reel3" src="https://www.ghibli.jp/gallery/majo001.jpg" />
+          <img class="reel3" src="https://www.ghibli.jp/gallery/majo003.jpg" />
+          <img class="reel3" src="https://www.ghibli.jp/gallery/majo014.jpg" />
+          <img class="reel3" src="https://www.ghibli.jp/gallery/majo037.jpg" />
+          <img class="reel3" src="https://www.ghibli.jp/gallery/majo043.jpg" />
+        </td>
+        <td>
+          <h3>Kiki’s Delivery Service (1989)</h3>
+          <br />
+          <p>
+            The Japanese title is Majo no Takkyūbin, or “Witch’s Delivery
+            Service.”
+          </p>
+          <p>
+            This film follows a young witch named Kiki who is sent out into the
+            world to train with her talking black cat, Jiji. She utilizes her
+            broomstick to start a delivery service and soon finds herself
+            struggling with the witch’s equivalent of writer’s block, losing her
+            ability to fly and comprehend her cat’s speech.
+          </p>
+          <p>
+            If you’re ever at a big Halloween party in Japan, you’re likely to
+            see more than one Kiki. Her navy blue frock and the signature red
+            bow she wears in her hair make for a popular costume.
+          </p>
+        </td>
+      </tr>
+    </table>
+    
+     <hr>
+
+    <table class="film">
+      <tr>
+        <td>
+          <img
+            class="reel1"
+            src="https://www.ghibli.jp/gallery/totoro024.jpg"
+          />
+          <img
+            class="reel1"
+            src="https://www.ghibli.jp/gallery/totoro029.jpg"
+          />
+          <img
+            class="reel1"
+            src="https://www.ghibli.jp/gallery/totoro010.jpg"
+          />
+          <img
+            class="reel1"
+            src="https://www.ghibli.jp/gallery/totoro006.jpg"
+          />
+          <img
+            class="reel1"
+            src="https://www.ghibli.jp/gallery/totoro012.jpg"
+          />
+        </td>
+
+        <td>
+          <h3>My Neighbour Totoro (1988)</h3>
+          <br />
+          <p>
+            The Japanese title is Tonari no Totoro.
+          </p>
+          <p>
+            Surveys have shown this to be Miyazaki’s most widely seen film on
+            the home front here in Japan. The story involves two sisters,
+            Satsuki and Mei, who befriend a rotund, whiskered creature in the
+            forest as their mother copes with illness.
+          </p>
+          <p>
+            Totoro is Ghibli’s mascot and both he and the movie’s
+            phantasmagorical Catbus have become cultural icons. Technically,
+            Totoro is also a Disney/Pixar character, having appeared as one of
+            the sentient stuffed animals in Toy Story 3.
+          </p>
+          <p>
+            This year, My Neighbor Totoro is celebrating its 30th anniversary.
+            The film is filled with indelible images such as the one of Satsuki
+            and the fanciful beast Totoro holding umbrellas at the bus stop in
+            the rain. If you haven’t seen any Ghibli movies, this might be a
+            good one to get you started.
+          </p>
+        </td>
+      </tr>
+    </table>
+    
+     <hr>
+
+    <script>
+      w3.slideshow(".reel1", 2000);
+      w3.slideshow(".reel2", 2000);
+      w3.slideshow(".reel3", 2000);
+      w3.slideshow(".reel4", 2000);
+      w3.slideshow(".reel5", 2000);
+      w3.slideshow(".reel6", 2000);
+      w3.slideshow(".reel7", 2000);
+    </script>
+
+    <button onclick="topFunction()" title="Go to top">
+      <img
+        src="https://img.icons8.com/material-sharp/50/000000/circled-chevron-up.png"
+      />
+    </button>
+    <footer>
+      <p>Site by Suzawani</p>
+      <script>
+        document.write(Date());
+      </script>
+    </footer>
   </body>
 </html>

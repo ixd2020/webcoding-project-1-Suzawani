@@ -22,100 +22,185 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   </head>
   <body>
     <div class="container">
       <div style="text-align:center" class="navbarlink">
-      <a href="index.html" class="home">Legacy of Hayao Miyazaki</a>
-      <a href="biography.html">BIOGRAPHY</a>
-      <a href="artworks.html"><b>ARTWORKS</b></a>
-      <a href="awards.html">AWARDS</a>
-      <a href="films.html">FILMS</a>
-    </div>
+        <a href="index.html" class="home">Legacy of Hayao Miyazaki</a>
+        <a href="biography.html">BIOGRAPHY</a>
+        <a href="artworks.html"><b>ARTWORKS</b></a>
+        <a href="awards.html">AWARDS</a>
+        <a href="films.html">FILMS</a>
+      </div>
     </div>
 
     <div style="text-align:center">
       <div class="art">
         <h1>
-          “The creation of a single world comes from a huge number of fragments
-          and chaos.”
+          <span class="text-wrapper">
+            <span class="letters"
+              >“The creation of a single world comes from a huge number of
+              fragments.”
+            </span>
+          </span>
         </h1>
       </div>
     </div>
-    <div class="clearfix">
-      <div class="landscape bluebox fourcol one zoom">
-        <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fmononoke024.jpg?v=1605150379327" class="myDIV">
-        <div class="hide">I am shown when someone hovers over the div above.</div>
-      </div>
-      <div class="portrait redbox fourcol five zoom">
-        <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fmononoke031.jpg?v=1606843277164" class="myDIV">
-        <div class="hide2">I am shown when someone hovers over the div above.</div>
-      </div>
-      <div class="landscape yellowbox fourcol one zoom">
-        <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fmononoke025.jpg?v=1606843503799" class="myDIV">
-        <div class="hide">I am shown when someone hovers over the div above.</div>
-      </div>
-     <div class="portrait redbox fourcol four zoom">
-        <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fmononoke026.jpg?v=1606842729301" class="myDIV">
-        <div class="hide2">I am shown when someone hovers over the div above.</div>
-      </div>
-      
-      
-      <div class="portrait redbox fourcol four zoom">
-        <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fchihiro003.jpg?v=1605726464761" class="myDIV">
-        <div class="hide2">I am shown when someone hovers over the div above.</div>
-      </div>
-       <div class="landscape bluebox fourcol one zoom">
-        <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fchihiro045.jpg?v=1606841964041" class="myDIV">
-        <div class="hide">I am shown when someone hovers over the div above.</div>
-      </div>
-      <div class="portrait redbox fourcol two zoom">
-        <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fchihiro015.jpg?v=1606843790010" class="myDIV">
-        <div class="hide2">I am shown when someone hovers over the div above.</div>
-      </div>
-       <div class="landscape bluebox fourcol one zoom">
-        <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fchihiro036.jpg?v=1605726466273" class="myDIV">
-        <div class="hide">I am shown when someone hovers over the div above.</div>
-      </div>
+
+    <div class="container c">
+      <table class="c">
+        <tr>
+          <td>
+            <img
+              src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fmononoke024.jpg?v=1605150379327"
+              class="myDIV landscape zoom"
+            />
+            <figcaption class="hide">
+              tree spirits watching the nightwalker
+            </figcaption>
+          </td>
+          <td>
+            <img
+              src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fmononoke031.jpg?v=1606843277164"
+              class="myDIV portrait zoom"
+            />
+            <figcaption class="hide2">"i hate humans"</figcaption>
+          </td>
+          <td>
+            <img
+              src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fmononoke025.jpg?v=1606843503799"
+              class="myDIV landscape zoom"
+            />
+            <figcaption class="hide">nightwalker transformation</figcaption>
+          </td>
+          <td>
+            <img
+              src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fmononoke026.jpg?v=1606842729301"
+              class="myDIV portrait zoom"
+            />
+            <figcaption class="hide2">nightwalker in original form</figcaption>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fchihiro003.jpg?v=1605726464761"
+              class="myDIV portrait zoom"
+            />
+            <figcaption class="hide2">
+              a deserted town in spirited away
+            </figcaption>
+          </td>
+          <td>
+            <img
+              src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fchihiro045.jpg?v=1606841964041"
+              class="myDIV landscape zoom"
+            />
+            <figcaption class="hide">
+              chihiro and haku in his dragon form
+            </figcaption>
+          </td>
+          <td>
+            <img
+              src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fchihiro015.jpg?v=1606843790010"
+              class="myDIV portrait zoom"
+            />
+            <figcaption class="hide2">ducks having a bath</figcaption>
+          </td>
+          <td>
+            <img
+              src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fchihiro036.jpg?v=1605726466273"
+              class="myDIV landscape zoom"
+            />
+            <figcaption class="hide">
+              chihiro's flashback on how she first met haku
+            </figcaption>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fmajo001.jpg?v=1606842721782"
+              class="myDIV landscape zoom"
+            />
+            <figcaption class="hide">
+              kiki pondering about her tedious life
+            </figcaption>
+          </td>
+          <td>
+            <img
+              src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fmajo016.jpg?v=1606844086408"
+              class="myDIV portrait zoom"
+            />
+            <figcaption class="hide2">tombo's fascination at kiki</figcaption>
+          </td>
+          <td>
+            <img
+              src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fmajo002.jpg?v=1606842722762"
+              class="myDIV landscape zoom"
+            />
+            <figcaption class="hide">kiki's rural home</figcaption>
+          </td>
+          <td>
+            <img
+              src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fmajo037.jpg?v=1606843960538"
+              class="myDIV portrait zoom"
+            />
+            <figcaption class="hide2">
+              kiki and tombo riding the flying-bike
+            </figcaption>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Ftotoro041.jpg?v=1606844499576"
+              class="myDIV portrait zoom"
+            />
+            <figcaption class="hide2">a scenery in totoro</figcaption>
+          </td>
+          <td>
+            <img
+              src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Ftotoro036.jpg?v=1606842735793"
+              class="myDIV landscape zoom"
+            />
+            <figcaption class="hide">
+              totoro flying with the kids after their bedtime
+            </figcaption>
+          </td>
+          <td>
+            <img
+              src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Ftotoro050.jpg?v=1606844493323"
+              class="myDIV portrait zoom"
+            />
+            <figcaption class="hide2">
+              the two siblings in the catbus
+            </figcaption>
+          </td>
+          <td>
+            <img
+              src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Ftotoro024.jpg?v=1606844440775"
+              class="myDIV landscape zoom"
+            />
+            <figcaption class="hide">
+              mei discovers totoro and pokes its nose
+            </figcaption>
+          </td>
+        </tr>
+      </table>
     </div>
-    
-    <div class="landscape bluebox fourcol one zoom">
-        <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fmajo001.jpg?v=1606842721782" class="myDIV">
-        <div class="hide">I am shown when someone hovers over the div above.</div>
-      </div>
-     <div class="portrait greenbox fourcol four zoom">
-       <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fmajo016.jpg?v=1606844086408" class="myDIV">
-        <div class="hide2">I am shown when someone hovers over the div above.</div>
-      </div>
-      <div class="landscape yellowbox fourcol one zoom">
-        <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fmajo002.jpg?v=1606842722762" class="myDIV">
-        <div class="hide">I am shown when someone hovers over the div above.</div>
-      </div>
-       <div class="portrait redbox fourcol two zoom">
-        <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Fmajo037.jpg?v=1606843960538" class="myDIV">
-        <div class="hide2">I am shown when someone hovers over the div above.</div>
-      </div>
-    
-    <div class="portrait redbox fourcol six zoom">
-        <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Ftotoro041.jpg?v=1606844499576" class="myDIV">
-        <div class="hide2">I am shown when someone hovers over the div above.</div>
-      </div>
-       <div class="landscape bluebox fourcol one zoom">
-        <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Ftotoro036.jpg?v=1606842735793" class="myDIV">
-        <div class="hide">I am shown when someone hovers over the div above.</div>
-      </div>
-      <div class="portrait redbox fourcol four zoom">
-        <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Ftotoro050.jpg?v=1606844493323" class="myDIV">
-        <div class="hide2">I am shown when someone hovers over the div above.</div>
-      </div>
-       <div class="landscape bluebox fourcol one zoom">
-        <img src="https://cdn.glitch.com/db9ae798-4333-464d-8277-6a0caf52bd65%2Ftotoro024.jpg?v=1606844440775" class="myDIV">
-        <div class="hide">I am shown when someone hovers over the div above.</div>
-      </div>
-    
-    
-    <div class="footer">
-      <p>FOOTER</p>
-    </div>
+    <button onclick="topFunction()" title="Go to top">
+      <img
+        src="https://img.icons8.com/material-sharp/50/000000/circled-chevron-up.png"
+      />
+    </button>
+    <footer>
+      <p>Site by Suzawani</p>
+      <script>
+        document.write(Date());
+      </script>
+    </footer>
   </body>
 </html>

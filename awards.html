@@ -17,6 +17,8 @@
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -32,32 +34,57 @@
     <div style="text-align:center">
       <div class="awards">
         <h1>
-          “I never read reviews. I'm not interested. But I value a lot the
-          reactions of the spectators.”
+          <span class="text-wrapper">
+            <span class="letters">
+              “I never read reviews. I'm not interested. But I value a lot of
+              the reactions of the spectators.”
+            </span>
+          </span>
         </h1>
       </div>
-      <div class="ponyo">
-        <div class="clearfix">
-          <div class="awdbox qwertbox twocolawd">
-            <img
-              src="https://live.staticflickr.com/2460/3759935120_5f1b41b836_b.jpg"
-            />
-            <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
-          </div>
-            <div class="clearfix">
-              <div class="awdbox asdfbox twocolawd">
-                <img
-                  src="https://live.staticflickr.com/2437/3759138759_099a471a53_b.jpg"
-                />
-                <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <div class="footer">
-      <p>FOOTER</p>
     </div>
+
+    <div id="oscar"><a class="soft-link">Oscar Awards</a></div>
+    <div id="panel1">
+      <ul>
+        <li>
+          Spirited Away ● Best Animated Feature
+        </li>
+        <li>
+          Howl's Moving Castle ● Best Animated Feature
+        </li>
+      </ul>
+    </div>
+
+    <div id="japan"><a class="soft-link">Japan Academy Prize</a></div>
+    <div id="panel2">
+      <ul>
+        <li>
+          My Neighbour Totoro ● Best Photography
+        </li>
+        <li>
+          Kiki's Delivery Service ● Special Award
+        </li>
+        <li>
+          Princess Mononoke ● Picture Of The Year
+        </li>
+        <li>
+          Spirited Away ● Picture Of The Year
+        </li>
+        <li>
+          Ponyo ● Animation Of The Year
+        </li>
+        <li>
+          The Wind Rises ● Animation Of The Year
+        </li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>Site by Suzawani</p>
+      <script>
+        document.write(Date());
+      </script>
+    </footer>
   </body>
 </html>
